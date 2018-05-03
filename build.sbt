@@ -11,8 +11,8 @@ lazy val core = Project("stringmetric-core", file("core"))
 	.settings(Settings.commonSettings)
 	.settings(
 		libraryDependencies ++= Seq(
-			"org.specs2" %% "specs2-core" % "4.0.2-291bdf5-20171123131811" % "test",
-			"org.specs2" %% "specs2-junit" % "4.0.2-291bdf5-20171123131811" % Test
+			"org.specs2" %% "specs2-core" % "4.0.4" % "test",
+			"org.specs2" %% "specs2-junit" % "4.0.4" % Test
 		)
 	)
 
@@ -20,8 +20,8 @@ lazy val cli = Project("stringmetric-cli", file("cli"))
 	.settings(Settings.commonSettings)
 	.settings(
 		libraryDependencies ++= Seq(
-			"org.specs2" %% "specs2-core" % "4.0.2-291bdf5-20171123131811" % "test",
-			"org.specs2" %% "specs2-junit" % "4.0.2-291bdf5-20171123131811" % Test
+			"org.specs2" %% "specs2-core" % "4.0.4" % "test",
+			"org.specs2" %% "specs2-junit" % "4.0.4" % Test
 		)
 	)
 	.dependsOn(core)
